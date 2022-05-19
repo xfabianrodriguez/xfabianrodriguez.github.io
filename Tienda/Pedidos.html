@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Pedidos</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="Style.css">
+        <link rel="icon" href="img/logor.png" type="image/png"/>
+    </head>
+    <body>
+        <div class="contenedor contpedidos">
+            <div class="header">
+                <header>
+                    <div class="barrarriba">
+                        <div class="logo"></div>
+                    </div>
+                    <nav class="barrabajo">
+                        <ul>
+                            <li><a href="Inicio.html">Inicio</a></li>
+                            <li><a href="QuienesSomos.html">Quienes Somos</a></li>
+                            <li class="carrito"><a href="Carrito.html">Carrito</a></li>
+                            <li class="productos">
+                                <a href="Relojes.html">Relojes</a>
+                                <div class="productos-content">
+                                    <a href="RelojesDeAcero.html">Acero</a>
+                                    <a href="RelojesDeAceroOro.html">Acero&Oro</a>
+                                    <a href="RelojesDeOro.html">Oro</a>
+                                    <a href="RelojesEngastados.html">Engastados</a>
+                                </div>
+                            </li>
+                            <li><a class="active" href="Pedidos.html">Pedidos</a></li>
+                            <li><a href="Novedades.html">Novedades</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+            <main>
+                <div class="categoria">
+                    <div class="subcategoria">
+                        <p class="p">Pedido Contrareembolso</p>
+                    </div>
+                </div>
+                <div class="pedidos">
+                    <form action="mailto:pepe@gomez.com" method="post" enctype="multipart/form-data">
+                        <br><p class="p1">Datos Personales</p>
+                        <div class="label">
+                            <label for="email"><span>Email*</span></label>
+                        </div> 
+                        <div class="data"> 
+                            <input type="email" name="email" value="" id="email" required>
+                        </div>
+                        <div class="label">
+                            <label for="name"><span>Nombre*</span></label>
+                        </div> 
+                        <div class="data"> 
+                            <input type="text" name="name" value="" id="name" required>
+                        </div>
+                        <div class="label">
+                            <label for="surname"><span>Apellidos*</span></label>
+                        </div> 
+                        <div class="data"> 
+                            <input type="text" name="surname" value="" id="surname" required>
+                        </div>
+                        <div class="col1">
+                            <div class="label label2">
+                                <label for="doc"><span>Tipo de Documento*</span></label>
+                            </div> 
+                            <div class="data data2"> 
+                                <select class="input2" name="documento" id="doc" required>
+                                    <option value="">Selecciona...</option>
+                                    <option value="dni">DNI</option>
+                                    <option value="nie">NIE</option>
+                                    <option value="pas">Pasaporte</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <div class="label label2">
+                                <label for="num"><span>Número de Documento*</span></label>
+                            </div>
+                            <div class="data data2">
+                                <input pattern="(([0-9]{8})([A-Z]{1}))" class="input2" type="text" name="num" value="" id="num" required>
+                            </div>
+                        </div>
+                        <div class="col1">
+                             <div class="label label2">
+                                <label for="pre"><span>Prefijo*</span></label>
+                            </div> 
+                            <div class="data data2"> 
+                                <input class="input2" type="tel" name="pre" value="" id="pre" required>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <div class="label label2">
+                                <label for="tel"><span>Número de telefono*</span></label>
+                            </div>
+                            <div class="data data2">
+                                <input class="input2" pattern="[0-9]{9}" type="tel" name="tel" value="" id="tel" required>
+                            </div>
+                        </div>
+                        <p class="p1">Datos de Envio</p>
+                        <div class="label">
+                            <label for="direc"><span>Dirección*</span></label>
+                        </div> 
+                        <div class="data"> 
+                            <input type="text" name="direc" value="" id="direc" required maxlength="50" placeholder="Máximo 50 caractereres">
+                        </div>
+                        <div class="col1">
+                            <div class="label label2">
+                               <label for="nums"><span>Número*</span></label>
+                           </div> 
+                           <div class="data data2"> 
+                               <input class="input2" type="text" name="nums" value="" id="nums" placeholder="Bloque,Portal,Piso,..." required>
+                           </div>
+                        </div>
+                        <div class="col2">
+                           <div class="label label2">
+                               <label for="cod"><span>Código Postal*</span></label>
+                           </div>
+                           <div class="data data2">
+                               <input class="input2" pattern="[0-9]{5}" type="text" name="cod" value="" id="cod" required>
+                           </div>
+                        </div>
+                        <div class="col1">
+                            <div class="label label2">
+                               <label for="city"><span>Ciudad*</span></label>
+                           </div> 
+                           <div class="data data2"> 
+                               <input class="input2" type="text" name="city" value="" id="city" required>
+                           </div>
+                        </div>
+                        <div class="col2">
+                           <div class="label label2">
+                               <label for="reg"><span>Región/Provincia*</span></label>
+                           </div>
+                           <div class="data data2">
+                               <input class="input2" type="text" name="reg" value="" id="reg" required>
+                           </div>
+                        </div>
+                        <input class="button" type="reset" value="Borrar Datos" id="reset">
+                        <input class="button" type="submit" value="Enviar Datos" id="submit">
+                    </form>
+                </div>
+            </main>
+            <footer>
+                <div class="footer">
+                    <div class="box">
+                        <p class="i1">Información de Contacto</p>
+                        <p class="i2">Relojería Rolex<br>Calle Hermanamiento 48<br>28021 Madrid, España<br>Teléfono: (+34) 632 40 64 89<br>WhatsApp: (+34) 632 40 64 89<br>Email: info@rolex.es</p>
+                        <p class="i1">Rolex</p>
+                        <p class="i2">
+                            <a class="i" href="QuienesSomos.html">Quienes Somos</a>
+                            <a class="i" href="Relojes.html">Comprar un Rolex</a>
+                            <a class="i" href="Pedidos.html">Realizar un Pedido</a>
+                        </p>
+                    </div>
+                    <div class="box">
+                        <p class="i1">Redes Sociales</p>
+                        <p class="i2">
+                            <a class="i" href="#">Facebook</a>
+                            <a class="i" href="#">Instagram</a>
+                            <a class="i" href="#">Twitter</a>
+                            <a class="i" href="#">YouTube</a>
+                            <a class="i" href="#">Pinterest</a>
+                            <a class="i" href="#">LinkedIn</a>
+                            <a class="i" href="#">Youku</a>
+                            <a class="i" href="#">WeChat</a>
+                            <a class="i" href="#">Weibo</a>
+                        </p>
+                    </div>
+                    <div class="box">
+                        <p class="i1">La Colección</p>
+                        <p class="i2">
+                            <a class="i" href="Datejust.html">Datejust</a>
+                            <a class="i" href="Submariner.html">Submariner</a>
+                            <a class="i" href="Perpetual.html">Perpetual</a>
+                            <a class="i" href="Master.html">GMT-Master</a>
+                            <a class="i" href="AirKing.html">Air-King</a>
+                            <a class="i" href="Milgauss.html">Milgauss</a>
+                        </p>
+                        <p class="i1">Servicios</p>
+                        <p class="i2">
+                            <a class="i" href="#">Preguntas Frecuentes</a>
+                            <a class="i" href="#">Busca un Distribuidor</a>
+                        </p>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="cookies">
+                    <a class="i ill">Todos los derechos reservados</a>
+                    <a class="i il" href="#">Condiciones de venta</a>
+                    <a class="i il" href="#">Politica de privacidad</a>
+                    <a class="i il" href="#">Politica de cookies</a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

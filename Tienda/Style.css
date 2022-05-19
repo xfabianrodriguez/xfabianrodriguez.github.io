@@ -1,0 +1,731 @@
+body{
+    margin: 0%;
+    background: url(./img/fondorolex2.png);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --f : #181a1b;
+    --o : rgb(0, 0, 0);
+    --c : rgba(0, 0, 0, 0.555);
+    --n : rgba(0, 0, 0, 0.788);
+    --d : rgb(222, 166, 33);
+    --g : rgb(166, 166, 166);
+    --b : rgb(255,255,255);
+    --b1 : rgba(255,255,255, 0.666);
+    --b2 : rgba(255,255,255, 0.333); 
+}
+.contenedor{
+    background-color: var(--c);
+    height: 250vh;
+}
+.header{
+    width: 100%;
+    height: 8vh;
+}
+header{
+    width: 100%;
+    position: fixed;
+    background-color: var(--n);
+}
+.barrarriba{
+    width: 100%;
+    height: 5vh;
+    display: inline-block;
+    border-radius: 20px;
+}
+.barrabajo{
+    border-radius: 20px;
+}
+.logo{
+    margin: auto;
+    width: 130px;
+    height: 13vh;
+    background: url(./img/logorolex.png);
+    background-repeat: no-repeat;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li{
+    float: left;
+}
+a{
+    display: block;
+    color: rgb(166, 166, 166);
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-style: italic;
+    font-family: serif;
+    font-size: 1.2vw;
+}
+a:hover:not(.active){
+    border-right: 2px solid var(--d);
+    border-left: 2px solid var(--d);
+    color: var(--d);
+}
+.active {
+    border-right: 2px solid var(--d);
+    border-left: 2px solid var(--d);
+    color: var(--d);
+    border-top: 2px solid var(--d);
+}
+.carrito{
+    float:right;
+}
+.productos-content{
+    display: none;
+    position: absolute;
+    width: 7.7%;
+    border-radius: 15px;
+    background-color: var(--n);
+}
+.productos-content a{
+    padding: 10px;
+    border-radius: 15px;
+    text-align: left;
+}
+.productos-content a:hover{
+    border-right: 2px solid var(--d);
+    border-left: 2px solid var(--d);
+}
+.productos-content .active{
+    border-top: 0;
+}
+.productos:hover .productos-content{
+    display: block;
+}
+.categoria{
+    margin: auto;
+    width: 80%;
+    height: 9vh;
+    background-color: transparent;
+}
+.subcategoria{
+    width: 100%;
+    height: 8vh;
+    background-color: var(--n);
+    border-radius: 20px;
+}
+.p{
+    text-align: center;
+    color: var(--g);
+    font-family: serif;
+    font-size: 3vw;
+    font-style: italic;
+    font-weight: bold;
+}
+.relojes{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 10px 10px;
+    margin: auto;
+    width: 80%;
+    height: 222vh;
+    background-color: transparent;
+}
+.col{
+    display: flex;
+    margin: 0;
+    width: 100%;
+    background-color: var(--n);;
+    border-radius: 20px;
+}
+.contimg{
+    width: 45%;
+    background-color: var(--f);
+    margin: 2%  ;
+    border-radius: 20px;
+}
+a.img{
+    width: 70%;
+    margin: auto;
+}
+img{
+    width: 90%;
+    height: 35vh;
+    border: 2px solid transparent;
+    border-radius: 20px;
+}
+img:hover{
+    transform: scale(1.144);
+    transition: ease 1.2s;
+}
+a.img:hover:not(.active){
+    border: 0px;
+}
+.detalles{
+    width: 55%;
+}
+.text{
+    width: 100%;
+    height: 25vh;
+    color: var(--g);
+    background-color: transparent;
+}
+.l1{
+    color: var(--g);
+    font-style: italic;
+    font-weight: lighter;
+    font-family: 'Gill Sans';
+    font-size: 1.1vw;
+}
+.l2{
+    color: var(--d);
+    font-style: italic;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman';
+}
+
+.l3{
+    font-size: 0.8vw;
+    font-family: 'Arial Narrow Bold';
+}
+.datos{
+    width: 100%;
+    height: 10vh;
+}
+.precio{
+    color: var(--b);
+    width: 100%;
+    height: 5vh;
+    font-style: italic;
+    font-family: Impact;
+    font-size: 1.2vw;
+}
+.visualizar{
+    width: 100%;
+}
+a.verproducto{
+    font-size: 1vw;
+    padding: 0;
+    text-align: left;
+    text-decoration: underline var(--g);
+}
+a.verproducto:hover:not(.active){
+    border: 0;
+    color: var(--d);
+    text-decoration: underline var(--d);
+}
+.coltext{
+    background-color: transparent;
+}
+.context{
+    width: 100%;
+    color: var(--g);
+}
+.t1{
+    width: 80%;
+    margin: auto;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2vw;
+    color: var(--o);
+}
+.t2{
+    width: 80%;
+    margin: auto;
+    font-size: 1vw;
+    font-weight: bold;
+    color: var(--o);
+}
+.pedidos{
+    margin: auto;
+    width: 70%;
+    height: 125vh;
+    border-radius: 20px;
+    background-color: var(--n);
+}
+.p1{
+    margin: 5px;
+    padding: 10px;
+    font-size: 2vw;
+    font-family: serif;
+    font-style: italic;
+    color: var(--b);
+}
+.label{
+    color: var(--g);
+    font-size: 1vw;
+    padding: 10px;
+}
+.data{
+    width: 100%;
+    height: 5vh;
+    padding: 10px;
+    padding-top: 0;
+}
+input{
+    color: var(--b);
+    font-size: 1vw;
+    width: 90%;
+    height: 4vh;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 2px solid var(--b);
+}
+select{
+    color: var(--g);
+    font-size: 1vw;
+    width: 90%;
+    height: 4.4vh;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 2px solid var(--b);
+}
+.label2{
+    width: 89%;
+}
+.data2{
+    width: 89%;
+}
+.col1{
+    width: 50%;
+    float: left;
+}
+.col2{
+    width: 50%;
+    float: right;
+}
+.contpedidos{
+    height: 170vh;
+}
+
+.button{
+    float: right;
+    width: 14%;
+    border: 2px solid var(--b);
+}
+#submit{
+    margin-right: 1%;
+}
+#reset{
+    margin-right: 10%;
+}
+.button:hover{
+    color: var(--d);
+    border: 2px solid var(--d);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.label:hover{
+    color: var(--d);
+}
+video{
+    float: right;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 2%;
+    border-radius: 20px;
+}
+.video{
+    margin: auto;
+    width: 60%;
+    height: 55vh;
+}
+.contrelojes{
+    height: 1000vh;
+}
+.catrelojes{
+    margin-top: 10%;
+}
+.text1{
+    margin: auto;
+    width: 70%;
+    height: 15vh;
+    background-color: transparent;
+}
+.tt0{
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+    color: var(--g);
+}
+.piezascont{
+    margin: auto;
+    width: 60%;
+    background-color: transparent;
+    height: 50vh;
+    margin-top: 4%;
+}
+.piezascont1{
+    margin-top: 0%;
+}
+.piezas{
+    float: left;
+    width: 46%;
+    background-color: var(--n);
+    margin: 2%;
+    border-radius: 20px;
+}
+.tt1{
+    color: var(--d);
+    font-weight: bold;
+    font-size: 1.2vw;
+    text-align: center;
+    font-style: italic;
+    font-family: serif;
+    margin: 0%;
+}
+.tt2{
+    color: var(--b);
+    font-size: 1vw;
+    text-align: center;
+    font-style: italic;
+    font-family: serif;
+    margin-top: 0%;
+}
+img.img1:hover{
+    transform: scale(1.0);
+}
+.img1{
+    width: 99%;
+    height: 40vh;
+}
+.piezas2{
+    background-color: var(--b);
+    width: 29%;
+}
+.tt3{
+    color: var(--f);
+    font-weight: bold;
+}
+.continicio{
+    height: 410vh;
+}
+.text2{
+    width: 60%;
+}
+.categorias{
+    margin: auto;
+    margin-top: 3%;
+    width: 80%;
+    height: 50vh;
+}
+.piezas3{
+    width: 21%;
+    background-color: var(--n);
+}
+.img2{
+    width: 99%;
+    height: 35vh;
+}
+.tt4{
+    color: var(--g);
+    padding: 4%;
+}
+.materiales{
+    border: 0;
+    padding: 0;;
+}
+a.materiales:hover{
+    border: 0;
+}
+.contdescripcion{
+    width: 70%;
+    height: 82vh;
+    background-color: var(--b1);
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 20px;
+}
+.descripcion{
+    width: 100%;
+    height: 72vh;
+    background-color: transparent;
+}
+.contimagen{
+    float: right;
+    width: 40%;
+    height: 62vh;
+    background-color: transparent;
+}
+.imagen{
+    width: 99%;
+    height: 70vh;
+}
+.conttexto{
+    width: 55%;
+    height: 70vh;
+}
+.header2{
+    color: var(--f);
+    background-color: var(--b1);
+}
+.contreloj{
+    background-color: var(--b2);
+    height: 120vh;
+}
+.pp1{
+    padding: 2%;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: serif;
+}
+.pp2{
+    padding: 2%;
+    font-size: 1vw;
+    font-style: italic;
+    font-family: serif;
+}
+.precio1{
+    width: 20%;
+    float: right;
+}
+.pp3{
+    margin-top: 1.5%;
+    font-size: 2vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Impact;
+    text-align: center;
+}
+.pp4{
+    padding-top: 0;
+}
+.comprar{
+    color: var(--o);
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+a.comprar:hover{
+    border: 0;
+    color: var(--d);
+}
+.mantenimiento{
+    margin: auto;
+    margin-top: 12%;
+    margin-bottom: 14%;
+    width: 50%;
+    height: 40vh;
+    background-color: var(--n);
+    border-radius: 20px;
+}
+.contcarrito{
+    height: 120vh;
+}
+.c1{
+    color: var(--g);
+    padding-top: 8%;
+    font-size: 2vw;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.c2{
+    color: var(--g);
+    font-size: 1.5vw;
+    font-style: italic;
+    font-family: serif;
+    text-align: center;
+}
+.recargar{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+a.recargar:hover{
+    border: 0;
+}
+.conthistory{
+    height: 400vh;
+}
+.history{
+    margin: auto;
+    width: 80%;
+    height: 360vh;
+    background-color: var(--n);
+    border-radius: 20px;
+}
+.h1{
+    margin: auto;
+    margin-top: 4%;
+    width: 75%;
+    height: 30vh;
+}
+.hp1{
+    color: var(--g);
+    font-size: 2.2vw;
+    padding: 2%;
+    margin: 0;
+    font-weight: bold;
+    font-style: italic;
+    font-family: sans-serif;
+}
+.hp2{
+    color: var(--g);
+    font-size: 1.2vw;
+    margin: 0;
+    padding-left: 2%;
+    font-style: italic;
+    font-family: serif;
+}
+.h2{
+    margin: auto;
+    width: 75%;
+    height: 50vh;
+}
+.hans{
+    width: 99.7%;
+    height: 44vh;
+}
+.hans:hover{
+    transform: none;
+}
+.h3{
+    margin: auto;
+    width: 75%;
+    height: 55vh;
+}
+.h4{
+    height: 50vh;
+}
+.hans2{
+    height: 50vh;
+}
+footer{
+    margin-top: 2%;
+    width: 100%;
+    height: 65vh;
+    color: var(--b);
+    background-color: var(--f);
+}
+.footer{
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-gap: 10px 10px;
+    width: 70%;
+    margin: auto;
+    padding: 5%;
+    padding-bottom: 0;
+}
+.box{
+    width: 100%;
+    font-family: serif;
+}
+a.i{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    text-align: initial;
+}
+a.i:hover{
+    border: 0;
+    color: var(--d);
+}
+.i1{
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: var(--b);
+}
+.i2{
+    font-size: 1vw;
+    font-style: italic;
+    color: var(--g);
+}
+hr{
+    margin: auto;
+    width: 70%;
+}
+.cookies{
+    padding-top: 1%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 45% 20% 20% 15%;
+    width: 70%;
+    height: 5vh;
+}
+.il{
+    float: right;
+}
+a.ill:hover{
+    color: var(--g);
+}
+.catrelojes2{
+    margin-top: -2%;
+}.novedades{
+    margin: auto;
+    margin-top: 3%;
+    width: 80%;
+    height: 240vh;
+    border-radius: 20px;
+    background-color: transparent;
+}
+section.s1{
+    display: grid;
+    grid-template-columns: 40% 55%;
+    width: 100%;
+    height: 40vh;
+    border-radius: 20px;
+    background-color: var(--f);
+}
+section.s2{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 100%;
+    height: 40vh;
+    border-radius: 20px;
+    background-color: var(--f);
+}
+article.img{
+    width: 100%;
+    height: 30vh;
+    margin: 0;
+}
+img.novimg{
+    padding: 3%;
+}
+img.novimg:hover{
+    transform: none;
+}
+article.info{
+    float: right;
+    width: 100%;
+    height: 30vh;
+}
+article.info2{
+    float: right;
+    width: 92%;
+    height: 30vh;
+    padding-left: 5%;
+}
+.a1{
+    margin-top: 3%;
+    font-size: 0.8vw;
+    color: var(--g);
+}
+.a2{
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: var(--b);
+}
+.a3{
+    font-size: 0.8vw;
+    color: var(--g);
+}
+.a4{
+    font-size: 1vw;
+    color: var(--g);
+}
+hr.arthr{
+    margin: auto;
+    width: 96.6%;
+}
+.contnovedades{
+    height: 270vh;
+}
+.piezas2:hover{
+    transform: scale(1.05);
+    transition: ease 1s;
+}
